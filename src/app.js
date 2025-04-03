@@ -1,6 +1,7 @@
 const express = require("express"); // Import express
+const {port} = require('./config.env')
 const app = express(); // Create an instance of express
-const port = 8000; // puerto de escucha
+
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
